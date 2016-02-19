@@ -28,6 +28,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Alphicsh.LinqExpressions.Fluent.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -40,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseFluentExpressBuilder.cs" />
+    <Compile Include="BodyBuilder.cs" />
+    <Compile Include="BodyBuilder_ExpressiveLasagna.cs" />
+    <Compile Include="BodyBuilder_Methods.cs" />
+    <Compile Include="BodyBuilder_StatementBlock.cs" />
     <Compile Include="Flex.cs" />
+    <Compile Include="Flex_FluentBuilders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
